@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+
+.cat-title,
+.page-title,
+.entryTitle {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: Georgia,serif;
+    font-size: 2.2em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1.2em;
+    margin-bottom: 0.2em;
+    font-family: Georgia,serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1em;
+    font-style: italic;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+
+/* links */
+a:focus,
+a:active,
+a:hover {
+    outline: none;
+}
+
+a {
+    color: #2487D7;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #135995;
+}
+
+
+/* lists */
+ul, ol, dl {
+    padding-left: 15px;
+}
+
+ol {
+    display: table;
+    margin: 0;
+    padding: 0;
+    counter-reset: item
+}
+
+ol > li {
+    counter-increment: foo;
+    display: table-row;
+}
+
+ol li:before {
+    content: counters(item, '.') '.';
+    counter-increment: item;
+    padding-right: 5px;
+    display: table-cell;
+    text-align: right;
+}
+
+dt {
+    margin-top: 1em;
+    font-family: serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+li,
+dt,
+dd {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+thead th {
+    background-color: #F0F0F0;
+}
+
+th, td {
+    border: 1px solid #E5E5E5;
+    padding: 0.6em;
+}
+
+th {
+    background-color: #F9F9F9;
+}
+
+blockquote {
+    position: relative;
+    border: none;
+    margin-left: 3.5em;
+    font-family: serif;
+    font-size: 1em;
+    color: #4D4D4D;
+}
+
+blockquote:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.6em;
+    content: '“';
+    font-size: 2.5em;
+    font-family: serif;
+    color: #AAAAAA;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+label {
+    width: 100%;
+    font-weight: normal;
+}
+
+input,
+textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    clear: both;
+    border: 1px solid;
+    width: 100%;
+    max-width: 100%;
+}
+
+input {
+    height: auto;
+}
+
+
+/* article */
+article.entry h2 {
+    overflow: hidden;
+    border-bottom: 1px solid #bbbbbb;
+    line-height: 1.4em;
+}

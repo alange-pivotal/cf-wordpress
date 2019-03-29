@@ -1,0 +1,11 @@
+---
+applications:
+  - name: wordpress-demo-app
+    memory: 256M
+    disk_quota: 512M
+    routes:
+    - route: wordpress-demo-app.cfapps.io
+    services:
+      - wpDB
+    buildpacks:
+      - php_buildpack

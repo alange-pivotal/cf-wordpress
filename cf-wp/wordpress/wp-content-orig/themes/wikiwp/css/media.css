@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+figure {
+    display: inline-block;
+}
+
+
+/* thumbnail */
+.entryThumbnail {
+    display: inline-block;
+    margin: 5px 15px 5px 0;
+}
+
+.thumbnailLink {
+    display: block;
+}
