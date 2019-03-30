@@ -9,3 +9,4 @@ applications:
       - wpDB
     buildpacks:
       - php_buildpack
+

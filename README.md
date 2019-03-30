@@ -140,6 +140,38 @@ At this point you need to provide the `backup file` as the only parameter to the
 ```
 After the restore is finished, the `cf ssh` process will be killed automatically.
 
+## Modifying deployment parameters using `modify.sh`
+
+I have added a new script `modify.sh` which can help you to change deployment settings.
+
+Following settings can be changed:
+* name - Name of the deployed app 
+* route - Route as FQDN to your app
+* database - Name of the database service (MySQL) which you want to use from your marketplace
+* plan - the plan you select from the database service
+
+**database and plan** needs to be used in combination to ensure you select a valid service/plan combination!
+
+```bash
+./modify.sh --help
+```
+```
+ help: version - Version 1.0 - 2019-03-30
+  modify provides 4 options to customize the deployment settings:
+  keys:
+    [name=] name of the app in your cf environment without any spaces and special characters
+    [route=] route to the app (FQDN) in your cf environment without any spaces and special characters
+    [database=] name of the database service used by wordpress
+    [plan=] name of the plan of the given database
+```
+
+**Example to modify all parameters:**
+```bash
+./modify.sh name=wordpress-example route=wordpressexample.cfapps.io database=p.mysql plan=small
+```
+
+All files and scripts as already described will be changed automatically.
+
 ## Additional Info
 
 The used PHP configuration is pre configured in the `cf-wp/.bp-config` folder.
@@ -204,7 +236,9 @@ ls -l /home/vcap/app/wordpress/wp-content
 echo "------END-----------"
 
 ```
-
+## Distribution
+feel free to copy and use the cf related deployment and preparation files. 
+You can find the Public License of [Wordpress](https://wordpress.org/about/license/) by klicking this link. 
 
 #
 This demo was created by Andreas Lange - alange@pivotal.io

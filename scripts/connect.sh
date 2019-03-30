@@ -16,7 +16,7 @@ bbHOST=$(cat access.json | jq -r '.hostname')
 bbDATE=$(date '+%Y-%m-%d-%H-%M-%S')
 bbBACKUPFILE=$(echo 'wpDB-'$bbDATE'.dmp')
 
-echo "create ssl tunnel to database -> 'cf ssh wordpress-demo-app -L 63306:"$bbHOST":"$bbPORT" --skip-remote-execution --force-pseudo-tty'"
+echo "create ssl tunnel to database"
 cf ssh wordpress-demo-app -L 63306:$bbHOST:$bbPORT --skip-remote-execution --force-pseudo-tty
 
 
