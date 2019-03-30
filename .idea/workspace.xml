@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281c5895-1ed6-497b-9997-bc5220ecb806" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modify.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cf-wp/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cf-wp/manifest.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cf-wp/wordpress/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/cf-wp/wordpress/wp-config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deleteApp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deleteApp.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployApp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployApp.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/connect.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/connect.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
@@ -33,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cf-wp/manifest.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -163,12 +157,12 @@
       <updated>1553882681363</updated>
       <workItem from="1553882682474" duration="3772000" />
       <workItem from="1553936357403" duration="17000" />
-      <workItem from="1553941657149" duration="8631000" />
+      <workItem from="1553941657149" duration="8856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12420000" />
+    <option name="totallyTimeSpent" value="12645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="831" extended-state="0" />
@@ -245,13 +239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cf-wp/manifest.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deployApp.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -276,6 +263,13 @@
             <caret line="225" column="4" lean-forward="true" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cf-wp/manifest.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
