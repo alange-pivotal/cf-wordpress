@@ -95,6 +95,9 @@ Use the ./deleteApp.sh script to destroy the app unbinding and deleting the data
 
 Prerequsits:
 * `mysqldmp` accessible from the scripts
+* `ssh` accessible from the scripts
+* `scp` accessible from the scripts
+* `#!/usr/bin/expect` accessible from the scripts
 
 at this moment I havn't linked the `mysqldump` path so you change the path to `mysqldump` in: `./scripts/backup.sh`
 
@@ -108,7 +111,8 @@ cf login -a https://api.run.pivotal io
 
 just enter your credentials and target your ORG and SPACE
 
-In the next step you shoud cd to your cf-wordpress folder to execute the backup script. The backup script will create temporary service credentials for the database and then dump the database to the `./wpbackup` folder by using a cf ssh tunnel through the `demo-app`.
+In the next step you shoud cd to your cf-wordpress folder to execute the backup script. The backup script will create temporary service credentials for the database and then dump the database to the `./wpbackups` folder by using a cf ssh tunnel through the `demo-app`.
+As well now the filesystem /home/vcap/app/files/APP-NAME/* is backed up as well and will appear as files-date.zip in your backup folder wpbackups.
 
 ```bash
 ./runBackup.sh
@@ -185,8 +189,6 @@ you will find the PHP Version and the webfolder in the `options.json`:
 }
 ```
 you will find a prep script to copy needed artifacts to the wordpress folder in `cf-wp/.profile`. This script is executed on app start.
-
-**[You would need to change the NFS path to a NFS service mount as soon you would need to integrate the file artefacts in your backup strategy!]**
 
 ```bash
 #!/bin/bash

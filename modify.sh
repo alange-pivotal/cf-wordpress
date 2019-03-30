@@ -74,6 +74,14 @@ if [[ ! -z "$bbname" ]]; then
     mv scripts/connect.tmp scripts/connect.sh
     chmod +x scripts/connect.sh
 
+    # changing backup script for the new app name
+    echo "changing scripts/backup.sh ..."
+    sed 's/bbNAME=.*/bbNAME="'$bbname'"/g' scripts/backup.sh > scripts/backup.tmp
+    mv scripts/backup.sh scripts/backup.bak
+    mv scripts/backup.tmp scripts/backup.sh
+    chmod +x scripts/backup.sh
+
+
     # changing the delepeApp.sh for the new app name
     echo "changing deleteApp.sh ..."
     sed 's/cf delete .*/cf delete '$bbname' -f/g' deleteApp.sh > deleteApp.tmp
