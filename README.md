@@ -21,8 +21,40 @@ After the script will finish:
 ````bash
 #0   active     2019-03-29T18:21:28Z   0.0%   39.1K of 256M   8K of 512M
 ````
+## Modifying deployment parameters using `modify.sh`
 
-## Modify the manifest.yml (App-Name and/or App-Route)
+I have added a new script `modify.sh` which can help you to change deployment settings.
+
+Following settings can be changed:
+* name - Name of the deployed app 
+* route - Route as FQDN to your app
+* database - Name of the database service (MySQL) which you want to use from your marketplace
+* plan - the plan you select from the database service
+
+**database and plan** needs to be used in combination to ensure you select a valid service/plan combination!
+
+```bash
+./modify.sh --help
+```
+```
+ help: version - Version 1.0 - 2019-03-30
+  modify provides 4 options to customize the deployment settings:
+  keys:
+    [name=] name of the app in your cf environment without any spaces and special characters
+    [route=] route to the app (FQDN) in your cf environment without any spaces and special characters
+    [database=] name of the database service used by wordpress
+    [plan=] name of the plan of the given database
+```
+
+**Example to modify all parameters:**
+```bash
+./modify.sh name=wordpress-example route=wordpressexample.cfapps.io database=p.mysql plan=small
+```
+
+All files and scripts as already described will be changed automatically.
+
+
+## Optional modify the manifest.yml (App-Name and/or App-Route) - manuel steps
 
 The manifest file `cf-wp/manifest.yml` contains all information for the app deployment:
 
@@ -51,7 +83,7 @@ scripts/connect.sh
 cf ssh "wordpress-demo-app" -L 63306:$bbHOST:$bbPORT --skip-remote-execution --force-pseudo-tty
 ```
 
-## Modify the type of MySQL Databased used
+## optional modify the type of MySQL Databased used - manuel steps
 
 If you want to use a different database you need to change the database creation in:
 `./deployApp.sh`
@@ -91,7 +123,7 @@ just enter your credentials and target your ORG and SPACE
 
 Use the ./deleteApp.sh script to destroy the app unbinding and deleting the database service used by wordpress.
 
-## Backing up the wordpress database
+## Backing up the wordpress database and filesystem
 
 Prerequsits:
 * `mysqldmp` accessible from the scripts
@@ -144,37 +176,6 @@ At this point you need to provide the `backup file` as the only parameter to the
 ```
 After the restore is finished, the `cf ssh` process will be killed automatically.
 
-## Modifying deployment parameters using `modify.sh`
-
-I have added a new script `modify.sh` which can help you to change deployment settings.
-
-Following settings can be changed:
-* name - Name of the deployed app 
-* route - Route as FQDN to your app
-* database - Name of the database service (MySQL) which you want to use from your marketplace
-* plan - the plan you select from the database service
-
-**database and plan** needs to be used in combination to ensure you select a valid service/plan combination!
-
-```bash
-./modify.sh --help
-```
-```
- help: version - Version 1.0 - 2019-03-30
-  modify provides 4 options to customize the deployment settings:
-  keys:
-    [name=] name of the app in your cf environment without any spaces and special characters
-    [route=] route to the app (FQDN) in your cf environment without any spaces and special characters
-    [database=] name of the database service used by wordpress
-    [plan=] name of the plan of the given database
-```
-
-**Example to modify all parameters:**
-```bash
-./modify.sh name=wordpress-example route=wordpressexample.cfapps.io database=p.mysql plan=small
-```
-
-All files and scripts as already described will be changed automatically.
 
 ## Additional Info
 
