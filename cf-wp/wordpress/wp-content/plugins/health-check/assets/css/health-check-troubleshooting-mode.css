@@ -1,0 +1,82 @@
+@media all and (min-width: 783px) {
+	#health-check-dashboard-widget {
+		margin-top: 3rem;
+	}
+}
+
+#health-check-dashboard-widget .welcome-panel-content {
+	max-width: initial;
+}
+
+#health-check-dashboard-widget .notices .no-notices p {
+	color: #bfc3c7;
+	font-size: 1.2rem;
+}
+
+#health-check-dashboard-widget .notices .notice {
+	margin-left: 0;
+}
+
+#health-check-dashboard-widget .notices .dismiss-notices {
+	float: right;
+	margin-right: 1rem;
+}
+
+#health-check-dashboard-widget .disable-troubleshooting-mode {
+	margin-bottom: 1rem;
+}
+
+@media all and (min-width: 960px) {
+	#health-check-dashboard-widget .disable-troubleshooting-mode {
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
+	}
+}
+
+#health-check-dashboard-widget .toggle-visibility {
+	display: none;
+}
+
+#health-check-dashboard-widget .toggle-visibility.visible {
+	display: block;
+}
+
+#health-check-dashboard-widget .welcome-panel-column-container {
+	position: initial;
+}
+
+#health-check-dashboard-widget .welcome-panel-column-container .welcome-panel-column.is-standalone-button {
+	width: 100%;
+	text-align: right;
+}
+
+#health-check-dashboard-widget .welcome-panel-column-container .welcome-panel-column.is-standalone-button .disable-troubleshooting-mode {
+	position: relative;
+}
+
+#health-check-dashboard-widget .about-description {
+	margin: 1em 0;
+}
+
+#health-check-dashboard-widget .health-check-toggle-visibility {
+	position: relative;
+	padding-right: 1.5rem;
+}
+
+#health-check-dashboard-widget .health-check-toggle-visibility .icon {
+	border: solid #9e9e9e;
+	border-width: 0 2px 2px 0;
+	height: 0.3rem;
+	pointer-events: none;
+	position: absolute;
+	right: 0.5em;
+	top: 50%;
+	transform: translateY(-60%) rotate(45deg);
+	width: 0.3rem;
+}
+
+#health-check-dashboard-widget .health-check-toggle-visibility .icon.icon-up {
+	transform: translateY(-50%) rotate(-135deg);
+	top: 60%;
+}
