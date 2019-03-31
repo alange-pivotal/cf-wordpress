@@ -2,10 +2,10 @@
 
 Cloudfoundry Wordpress is a repository to demostrate how to deploy wordpress 5.1.1 to cloudfoundry.
 Using a MySQL database this demo uses "cleardb" plan "spark" in PWS.
-
+##
 Langugage Packs english and german are already included. I added "wikiwp" as an additional template. 
 NEW: kanban plugin added to wordpress. The open kanban plugin can be activated in the plugins menu.
-[KANBANK PRO](https://kanbanwp.com/downloads/kanban-pro/) can be purchased here.
+
 
 
 ## Installation
