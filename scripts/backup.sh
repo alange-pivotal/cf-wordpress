@@ -8,7 +8,7 @@ bbPWD=$(cat access.json | jq -r '.password')
 bbUSER=$(cat access.json | jq -r '.username')
 bbHOST=$(cat access.json | jq -r '.hostname')
 bbDATE=$(date '+%Y-%m-%d-%H-%M-%S')
-bbBACKUPFILE=$(echo 'wpbackups/wpDB-'$bbDATE'.dmp')
+bbBACKUPFILE=$(echo 'wpbackups/db-'$bbDATE'.dmp')
 bbNAME="wordpress-demo-app"
 
 mkdir wpbackups
@@ -44,14 +44,14 @@ echo "SSH_PORT:"$bbSSHPORT
 echo "DATE:"$bbDATE
 bbSSHUSER="cf:"$bbGUID"/0"
 echo "SSH_USER:"$bbSSHUSER
-mkdir wpbackups
-mkdir wpbackups/$bbDATE
+
+bbFOLDER="wpbackups"
+mkdir $bbFOLDER
 
 
-bbFOLDER="wpbackups/"$bbDATE
 echo "backup folder:"$bbFOLDER
 
-bbSOURCE="/home/vcap/app/files/backup.zip"
+bbSOURCE="/home/vcap/app/wordpress/wp-content/backup.zip"
 echo "start backup... "$bbSOURCE
 bbSSHPASS=$(cf ssh-code)
 echo "SSH_PASSWORD:"$bbSSHPASS
@@ -69,17 +69,18 @@ echo "SSH_PASSWORD:"$bbSSHPASS
 echo ""
 rm cf_info.json
 echo ""
-echo "unzipping content without app name into backup folder: wpbackups/files/$bbDATE"
-cd wpbackups/$bbDATE
-unzip backup.zip
-mv home/vcap/app/files/$bbNAME/* .
-rm -rf home
-rm -f backup.zip
-zip -r backup.zip *
-mv backup.zip ../backup.tmp
-rm -rf *
-mv ../backup.tmp ../files-$bbDATE.zip
-rm -rf ../$bbDATE
+#echo "unzipping content without app name into backup folder: wpbackups/files/$bbDATE"
+mv $bbFOLDER/backup.zip $bbFOLDER/backup-$bbDATE.zip
+#cd wpbackups/$bbDATE
+#unzip backup.zip
+#mv home/vcap/app/files/$bbNAME/* .
+#rm -rf home
+#rm -f backup.zip
+#zip -r backup.zip *
+#mv backup.zip ../backup.tmp
+#rm -rf *
+#mv ../backup.tmp ../files-$bbDATE.zip
+#rm -rf ../$bbDATE
 
 echo "done..."
 

@@ -89,6 +89,7 @@ if [[ ! -z "$bbname" ]]; then
     mv deleteApp.tmp deleteApp.sh
     chmod +x deleteApp.sh
 
+
   fi
 
 fi
