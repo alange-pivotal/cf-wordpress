@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281c5895-1ed6-497b-9997-bc5220ecb806" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/backup_files1.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/backup_files2.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/backup_files3.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cf-wordpress.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modify.sh" beforeDir="false" afterPath="$PROJECT_DIR$/modify.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/backup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/backup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/backup_files1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/backup_files1.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/backup_files3.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/backup_files3.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,18 +28,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/backup_files1.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="294">
-                <caret line="116" selection-start-line="116" selection-end-line="116" />
+              <first_editor relative-caret-position="324">
+                <caret line="118" column="3" lean-forward="true" selection-start-line="118" selection-start-column="3" selection-end-line="118" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -60,17 +49,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/backup_files2.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="120">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/backup_files3.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="120">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -139,17 +128,17 @@
         <option value="$PROJECT_DIR$/modify.sh" />
         <option value="$PROJECT_DIR$/scripts/test.sh" />
         <option value="$PROJECT_DIR$/scripts/backup_files.sh" />
-        <option value="$PROJECT_DIR$/scripts/backup_files1.sh" />
-        <option value="$PROJECT_DIR$/scripts/backup_files3.sh" />
         <option value="$PROJECT_DIR$/scripts/backup_files2.sh" />
         <option value="$PROJECT_DIR$/scripts/backup.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/scripts/backup_files1.sh" />
+        <option value="$PROJECT_DIR$/scripts/backup_files3.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="203" />
     <option name="width" value="1440" />
     <option name="height" value="831" />
   </component>
@@ -211,24 +200,24 @@
       <workItem from="1553882682474" duration="3772000" />
       <workItem from="1553936357403" duration="17000" />
       <workItem from="1553941657149" duration="9921000" />
-      <workItem from="1553966234973" duration="7062000" />
+      <workItem from="1553966234973" duration="8001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20772000" />
+    <option name="totallyTimeSpent" value="21711000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="831" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.80594057" visible="true" weight="0.2629683" />
-      <window_info id="Structure" order="2" sideWeight="0.1940594" side_tool="true" visible="true" weight="0.2629683" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8062016" visible="true" weight="0.2629683" />
+      <window_info id="Structure" order="2" sideWeight="0.19379845" side_tool="true" visible="true" weight="0.2629683" />
       <window_info anchor="bottom" id="Graph Database Console" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.2986111" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.28333333" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
@@ -321,27 +310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/backup_files2.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/backup_files1.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/backup_files3.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/backup.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -366,10 +334,31 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="294">
-            <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <first_editor relative-caret-position="324">
+            <caret line="118" column="3" lean-forward="true" selection-start-line="118" selection-start-column="3" selection-end-line="118" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/backup_files2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/backup_files1.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/backup_files3.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
         </state>
       </provider>
     </entry>

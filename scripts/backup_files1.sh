@@ -6,7 +6,7 @@
   set bbsshuser [lindex $argv 4]
   set bbport [lindex $argv 5]
   set bbsource [lindex $argv 6]
-  spawn ssh -p $bbport $bbsshuser@$bbsshhost zip -r /home/vcap/app/files/backup.zip /home/vcap/app/files/$bbname/*
+  spawn ssh -p $bbport -o StrictHostKeyChecking=no $bbsshuser@$bbsshhost zip -r /home/vcap/app/files/backup.zip /home/vcap/app/files/$bbname/*
   expect {
     password: {
       send $bbpass\r
