@@ -9,9 +9,6 @@ bbPORT=$(cat access.json | jq -r '.port')
 bbDBNAME=$(cat access.json | jq -r '.name')
 bbPWD=$(cat access.json | jq -r '.password')
 bbUSER=$(cat access.json | jq -r '.username')
-bbHOST=$(cat access.json | jq -r '.hostname')
-bbDATE=$(date '+%Y-%m-%d-%H-%M-%S')
-bbBACKUPFILE=$(echo 'wpDB-'$bbDATE'.dmp')
 
 echo "creating tmp file to import..."
 

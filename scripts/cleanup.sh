@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "cleaning up..."
+echo cleanup...
 cf delete-service-key wpDB WP-EXTERNAL-ACCESS-KEY -f
 rm access.json
 
